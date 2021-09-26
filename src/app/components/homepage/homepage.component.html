@@ -1,1 +1,15 @@
-<p>homepage works!</p>
+<h1 class="ui center aligned header">{{ title }}</h1>
+<div class="ui section hidden divider"></div>
+<div class="ui container center aligned">
+  <app-custom-button
+    text="Button 1"
+    (btnClicked)="showBtnInfo(btn1)"
+    #btn1
+  ></app-custom-button>
+  <div class="ui hidden divider"></div>
+  <app-custom-button
+    text="Button 2"
+    (btnClicked)="showBtnInfo(btn2)"
+    #btn2
+  ></app-custom-button>
+</div>
